@@ -1,0 +1,42 @@
+-- create database rs
+-- use rs
+-- soal1
+-- create table pasien (
+-- id_pasien int primary key,
+-- nama_pasien varchar (20),
+-- tanggal_lahir date,
+-- nomer_hp varchar (12)
+-- );
+-- create table dokter(
+-- id_dokter int primary key,
+-- nama_dokter varchar (20),
+-- spesialisai varchar (50)
+-- );
+-- create table rekam_medis (
+-- id_rekam int primary key,
+-- id_pasien int,
+-- id_dokter int,
+-- tanggal_periksa date,
+-- diagnosis text,
+-- foreign key(id_pasien) references pasien (id_pasien) on delete restrict,
+-- foreign key(id_dokter) references dokter (id_dokter) on delete restrict
+-- );
+
+-- soal2
+-- insert into dokter values
+-- (1,'wildan','kehamilan'),
+-- (2,'dani','sunat');
+-- insert into pasien values
+-- (11,'saki','2025-10-01','0987654321'),
+-- (12,'ilham','2006-10-30','1234567890');
+-- insert into rekam_medis values
+-- (101,'11','1','2025-10-01','sakit perut'),
+-- (102,'12','2','2011-10-01','sunat');
+-- insert into rekam_medis values
+-- (103,'3','3','2098-01-01','pusing');
+
+-- soal3
+-- update pasien 
+-- set nomer_hp = '0987654321'
+-- where id_pasien = 11;
+
